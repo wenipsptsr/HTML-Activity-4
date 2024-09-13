@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.task-overview {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.header {
+    position: relative;
+}
+
+.icon-top-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.icon-top-right img {
+    width: 25px;
+    height: 25px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.pending {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.task-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-icon img {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+}
+
+.task-info h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.task-info p {
+    color: gray;
+    font-size: 13px;
+}
+    </style>
+</head>
+<body>
+    <div class="task-overview">
+        <div class="header">
+        <h2>Tasks Overview</h2>
+        <p class="pending">Pending 10 tasks</p>
+        <div class="icon-top-right">
+            <img src="icon2.jpeg" alt="Icon">
+        </div>
+        </div>
+        
+        <div class="task-list">
+            <div class="task-item">
+                <div class="task-icon" style="background-color: #DFFFE2;">
+                    <img src= ikon1.jpeg alt="Project Briefing Icon">
+                </div>
+                <div class="task-info">
+                    <h3>Project Briefing</h3>
+                    <p>Project Manager</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="task-item">
+                <div class="task-icon" style="background-color: #FFF2D4;">
+                    <img src= iconkuning.jpeg alt="Concept Design Icon">
+                </div>
+                <div class="task-info">
+                    <h3>Concept Design</h3>
+                    <p>Art Director</p>
+                </div>
+            </div>
+
+            <div class="task-item">
+                <div class="task-icon" style="background-color: #DFEFFF;">
+                    <img src= iconbiru.jpeg alt="Functional Logics Icon">
+                </div>
+                <div class="task-info">
+                    <h3>Functional Logics</h3>
+                    <p>Lead Developer</p>
+                </div>
+            </div>
+
+            <div class="task-item">
+                <div class="task-icon" style="background-color: #FFE7EB;">
+                    <img src= iconmerah.jpeg alt="Development Icon">
+                </div>
+                <div class="task-info">
+                    <h3>Development</h3>
+                    <p>DevOps</p>
+                </div>
+            </div>
+
+            <div class="task-item">
+                <div class="task-icon" style="background-color: #F1E8FF;">
+                    <img src= iconungu.jpeg alt="Testing Icon">
+                </div>
+                <div class="task-info">
+                    <h3>Testing</h3>
+                    <p>QA Managers</p>
+                </div>
+            </div>
+
+</div>
+</body>
+</html>
