@@ -3,23 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project Card</title>
     <style>
-        .bottom-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .due-date p {
-            color: #888;
-        }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.image-container {
+    width: 300px;
+    padding: 15px; /* Tambahkan padding di sekitar gambar */
+    box-sizing: border-box; /* Ini untuk memastikan padding tidak mempengaruhi ukuran box */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Menambahkan border radius agar gambar terlihat lebih smooth */
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.badge {
+    background-color: #f0f0f0;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.status {
+    background-color: #e0f2ff;
+    color: #007bff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.manager-info, .budget-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.manager-info p, .budget-info p {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.manager-name {
+    display: flex;
+    align-items: center;
+}
+
+.manager-name img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.budget-info span {
+    color: #28a745;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.description {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.date-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd; /* Border untuk bagian ini */
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.date-info .date {
+    margin-right: 20px; /* Jarak antara tanggal dan budget */
+}
+
+.date-info p {
+    color: #888;
+    font-size: 14px;
+}
+
+.date-info .budget {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.avatars {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: -10px; /* Membuat avatar tumpang tindih */
+    border: 2px solid white; /* Tambahkan border putih agar terlihat rapi */
+    position: relative;
+    z-index: 1;
+}
+
+.avatar:nth-child(2) {
+    z-index: 2;
+}
+
+.avatar:nth-child(3) {
+    z-index: 3;
+}
+
+.extra-avatar {
+    width: 35px;
+    height: 35px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    z-index: 4;
+    border: 2px solid white;
+    margin-left: -10px; /* Sama dengan avatar lain */
+}
+
+.view-project {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+}
+
+.view-project:hover {
+    background-color: #0056b3;
+}
     </style>
 </head>
 <body>
     <div class="card">
         <div class="image-container">
-            <img src="gambartugas2.jpeg" alt="Project Image">
+            <img src="your-image-link.jpg" alt="Project Image">
         </div>
         <div class="content">
             <div class="top-section">
@@ -28,34 +221,41 @@
                 <span class="status">In Process</span>
             </div>
 
+            <div class="description">
+                Flat cartoony illustrations with vivid unblended colors and asymmetrical beautiful purple hair lady
+            </div>
+
             <div class="info">
-                <div class="manajer-info">
-                    <p>Manajer</p>
-                    <div class="manajer-name">
-                        <img src="avatar1.jpeg" alt="Manajer Avatar">
+                <div class="manager-info">
+                    <p>Manager</p>
+                    <div class="manager-name">
+                        <img src="manager-avatar.jpg" alt="Manager Avatar">
                         <span>Robert Fox</span>
                     </div>
                 </div>
-
                 <div class="budget-info">
                     <p>Budget</p>
-                    <div class="budget-number">
-                        <img src="gambarbudget.jpeg" alt="Budget Avatar">
-                        <span>$64.800</span>
-                    </div>
-                </div>
-
-                <div class="description">
-                    Flat cartoony illustrations with vivid unblended colors and asymmetrical beautiful purple hair lady
+                    <span>$64,800</span>
                 </div>
             </div>
 
             <div class="bottom-section">
-                <div class="due-date">
-                    <p>Feb 6, 2021</p>
-                    <p class="budget-total">$284,900</p>
+                <div class="date-info">
+                    <div class="date">
+                        <p>Feb 6, 2021</p>
+                    </div>
+                    <div class="budget">
+                        <span>$284,900</span>
+                    </div>
+                </div>
+                <div class="avatars">
+                    <img src="avatar1.jpg" alt="Team Member 1" class="avatar">
+                    <img src="avatar2.jpg" alt="Team Member 2" class="avatar">
+                    <div class="extra-avatar">S</div>
                 </div>
             </div>
+
+            <a href="#" class="view-project">View Project</a>
         </div>
     </div>
 </body>

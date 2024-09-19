@@ -15,17 +15,17 @@
         .container {
             display: flex;
             border: 1px solid #ccc;
-            width: 700px;
+            width: 750px;
             padding: 10px;
             font-family: Arial, sans-serif;
-            height: 300px;
+            height: 340px;
         }
         .kiri {
             flex: 1;
         }
         .kiri img {
-            width: 300px;
-            height: 300px;
+            width: 350px;
+            height: 340px;
             object-fit: cover;
             border-radius: 10px;
         }
@@ -76,8 +76,8 @@
            align-items: center;
         }
        .manajer-name img {
-           width: 35px;
-           height: 35px;
+           width: 30px;
+           height: 30px;
            margin-right: 10px;
            border-radius: 100px;
            margin-top: 1px;
@@ -125,28 +125,68 @@
         .deskripsi {
             font-size: 15px;
             color: #666;
-            margin-top: 35px;
+            margin-top: 25px;
             margin-right: 30px;
         }
         .baris-keempat {
             display: flex;
-           gap: 20px;
-           flex-direction: row;
+            gap: 20px;
         }
-        .tanggal-info {
-           width: 150px;
-           border: 2px solid gray;
-           padding: 10px;
-           align-items: center;
+        .box {
+            border: 1px dashed lightgray;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            width: 150px;
+            margin-top: 25px;
         }
-        .tanggal-info p {
-            font-size: 16px;
+        .label {
+            font-size: 12px;
+            color: gray;
+        }
+        .value {
+            font-size: 18px;
+            color: black;
             font-weight: bold;
         }
-        .tanggal-info span {
-            margin: 5px 0px;
-            font-size: 14px;
-            color: #666;
+
+
+        .baris-kelima {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar-container {
+            display: flex;
+        }
+
+        .avatar {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-left: -10px;
+            object-fit: cover;
+            margin-top: 25px;
+        }
+
+        .avatar:first-child {
+            margin-left: 0;
+        }
+
+        .view-project {
+            margin-left: 190px;
+            font-size: 15px;
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+        }
+        .view-project img {
+            width: 15px;
+            height: 15px;
+            margin-left: 5px;
         }
     </style>
 </head>
@@ -155,7 +195,7 @@
 
         <!-- Div Kiri -->
         <div class="kiri">
-            <img src="gambartugas2.jpeg" alt="Project Image">
+            <img src="gambartgs2.jpeg" alt="Project Image">
         </div>
     
         <!-- Div Kanan -->
@@ -170,14 +210,15 @@
             <!-- Div 2 -->
              <div class="baris-kedua">
                 <div class="manajer-name">
-                    <img src="seblak.jpeg">
+                    <img src="perempuan.jpeg">
                     <div class="manajer-info">
                         <span class="manajer">Manajer</span>
                         <p class="robert">Robert Fox</p>
                     </div>
                 </div>
+                
                 <div class="budget-number">
-                    <img src="seblak.jpeg">
+                    <img src="gambarbudget.jpeg">
                     <div class="budget-info">
                         <span class="budget">Budget</span>
                         <p class="number">$64.800</p>
@@ -192,14 +233,28 @@
 
             <!-- Div 4 -->
             <div class="baris-keempat">
-                    <div class="tanggal-info">
-                        <p>Feb 6, 2021</p>
-                        <span>Due Date</span>
-                    </div>
-                </div>
-                   
+                    <div class="box">
+                        <div class="value">Feb 6, 2021</div>
+                        <div class="label">Due Date</div>
+                        </div>
+                        <div class="box">
+                            <div class="value">Feb 6, 2021</div>
+                            <div class="label">Due Date</div>
+                            </div>
+                            </div>
 
-    </div>
-    </div>
+            <!-- Div 5 -->
+            <div class="baris-kelima">
+                <div class="avatar-container">
+                    <img src="biru.jpeg" alt="Avatar 1" class="avatar">
+                    <img src="merah.jpeg" alt="Avatar 2" class="avatar">
+                    <img src="ungu.jpeg" alt="Avatar 3" class="avatar">
+                </div>
+                
+                <a href="#" class="view-project">
+                    View Project
+                    <img src="gambarview.jpeg" alt="Icon">
+                </a>
+            </div>
 </body>
 </html>

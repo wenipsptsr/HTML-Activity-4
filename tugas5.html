@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Bromo</title>
+    <style>
+        * {
+            margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 300px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(225, 225, 225, 0.8);
+    padding: 20px;
+    z-index: 2;
+}
+
+.trip-duration {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pricing span {
+    font-size: 14px;
+    color: #333;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.learn-more {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #ddd;
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-image">
+            <img src="mendaki.webp" alt="Explore Bromo">
+        </div>
+        <div class="card-content">
+            <p class="trip-duration">7 Days Trip</p>
+            <h1>Explore Bromo</h1>
+            <p class="description">We offer more than just trips. We craft journeys that immerse you in the culture, history of every destination.</p>
+            <div class="pricing">
+                <span>From</span>
+                <p class="price">$450/pack</p>
+            </div>
+            <button class="learn-more">Learn More</button>
+        </div>
+    </div>
+</body>
+</html>

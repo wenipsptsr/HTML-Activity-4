@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .card {
+            width: 386px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .image {
+            width: 386px;
+            height: 257px;
+            object-fit: cover;
+        }
+        .content {
+            padding: 15px;
+            position: relative;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .author-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 345px;
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            
+        }
+        .author-img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .reaction {
+            display: flex;
+            align-items: center;
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="sosialmedia.jpeg" alt="Social Media Icons" class="image">
+        <div class="content">
+            <h3>Urban Dreams</h3>
+            <div class="author-info">
+            <div class="author">
+                <img src="icontugas3.jpeg" alt="Author Image" class="author-img">
+                <span>Cody Fisher</span>
+            </div>
+
+           <div class="social">
+            <div class="reaction">
+                <img src="like.jpeg" alt="Like" class="icon">
+                <span>24</span>
+            </div>
+
+            <div class="reaction">
+                <img src="komen.jpeg" alt="Comment" class="icon">
+                <span>5</span>
+            </div>
+           </div>
+           </div>
+           </div>
+           </div>
+</body>
+</html>
